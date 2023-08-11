@@ -1,21 +1,21 @@
 {
-  "name": "bla",
+  "name": "ruh",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://SonGlad.github.io/bla",
+  "homepage": "https://SonGlad.github.io/ruh",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /bla/"
+    "build": "parcel build src/*.html --public-url /ruh/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SonGlad/bla.git"
+    "url": "git+https://github.com/SonGlad/ruh.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SonGlad/bla/issues"
+    "url": "https://github.com/SonGlad/ruh/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
