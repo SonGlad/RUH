@@ -1,0 +1,2 @@
+const e=document.querySelector("#header-open-modal-btn"),d=document.querySelector("#hero-open-modal-btn"),o=document.querySelector("#modal"),c=document.querySelector("#modal-close-btn");function t(){document.body.classList.add("scroll-lock")}e.addEventListener("click",(()=>{o.classList.remove("is-hidden"),t()})),d.addEventListener("click",(()=>{o.classList.remove("is-hidden"),t()})),c.addEventListener("click",(()=>{o.classList.add("is-hidden"),document.body.classList.remove("scroll-lock")}));
+//# sourceMappingURL=index.521d5e72.js.map

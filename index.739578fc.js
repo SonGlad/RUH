@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector("#header-open-modal-btn"),o=document.querySelector("#hero-open-modal-btn"),c=document.querySelector("#modal"),n=document.querySelector("#modal-close-btn");function d(){document.body.classList.add("scroll-lock")}e.addEventListener("click",(function(){c.classList.remove("is-hidden"),d()})),o.addEventListener("click",(function(){c.classList.remove("is-hidden"),d()})),n.addEventListener("click",(function(){c.classList.add("is-hidden"),document.body.classList.remove("scroll-lock")}))}();
+//# sourceMappingURL=index.739578fc.js.map
