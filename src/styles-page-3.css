@@ -239,7 +239,7 @@ svg {
         width: 182px;
         height: 101px;
         margin-right: 0;
-        margin-left: 6px;
+        margin-left: 72px;
     }
 
     .button-container{
@@ -634,7 +634,6 @@ background-color: transparent;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 272px;
-  min-height: 155px;
   background-color: var(--white);
   border-radius: 20px;
   box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.07);
@@ -686,7 +685,7 @@ background-color: transparent;
 
 .modal-content-item{
   cursor: pointer;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background-color: var(--light-blue);
@@ -694,6 +693,10 @@ background-color: transparent;
   width: 47px;
   height: 47px;
   transition: background-color var(--main-trans);
+}
+
+.modal-content-item-btn{
+  display: flex;
 }
 
 .modal-content-item:hover,
@@ -833,7 +836,6 @@ background-color: transparent;
   .modal{
     padding: 131px 66px 38px 57px;
     width: 771px;
-    min-height: 548px;
     border-radius: 30px;
   }
 
@@ -930,6 +932,10 @@ background-color: transparent;
   }
 }
 
+
+
+/* классы для активации модалки */
+
 .backdrop.is-hidden .modal{
   transform: scale(0.75) translate(-65%, -65%);
   opacity: 0;
@@ -938,4 +944,21 @@ background-color: transparent;
 
 .scroll-lock {
   overflow: hidden;
+}
+
+
+/* классы для активности li и svg в модалке */
+.modal-active-item{
+  background-color: var(--main-blue);
+}
+
+.modal-active-item-svg{
+  fill: var(--light-blue);
+  stroke: var(--light-blue);
+}
+
+
+/* класс для рендера li в модалке */
+.modal-active-array-item{
+  display: flex;
 }

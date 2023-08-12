@@ -1,41 +1,38 @@
-// const accordeonParent = document.querySelectorAll('.hero-accordeon-item');
+const accordeonList = document.querySelector('#hero-accordeon-list');
+const accordeonItems = Array.from(accordeonList.children);
 
-// accordeonParent.forEach((item) =>{
-    
-//     item.querySelector('.accordeon-title').onclick = function(){
-//      const accordeon = this.closest('.hero-accordeon-item').querySelector('.accordeon')
+accordeonItems[0].classList.add('hero-accordeon-item-active');
+accordeonItems[0].querySelector('.js-accordeon-title').classList.add('accordeon-title-active');
+accordeonItems[0].querySelector('.js-accordeon-element').classList.add('accordeon-visible');
 
-//      accordeon.classList.toggle('accordeon-visible')
-//     }
-// })
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('#hero-accordeon-list')) {
+    closeAllAccordeonItems();
+  }
+});
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     const accordeonItems = document.querySelectorAll(".hero-accordeon-item");
-  
-//     accordeonItems.forEach(item => {
-//       const title = item.querySelector(".accordeon-title");
-//       const content = item.querySelector(".accordeon");
-  
-//       title.addEventListener("click", () => {
-//         if (item.classList.contains("accordeon-visible")) {
-//           item.classList.remove("accordeon-visible");
-//         } else {
-//           accordeonItems.forEach(accItem => {
-//             accItem.classList.remove("accordeon-visible");
-//           });
-//           item.classList.add("accordeon-visible");
-//         }
-//       });
-//     });
-//   });
+accordeonItems.forEach(item => {
+    const accordeonTitle = item.querySelector(".js-accordeon-title");
+    const accordeonElement = item.querySelector(".js-accordeon-element");
 
-// const accordeonList = document.querySelector('.hero-accordeon-item');
-// const accordeonTitle = document.querySelector('.accordeon-title')
-// const accordeonContent = document.querySelector('.accordeon');
+    accordeonTitle.addEventListener('click', () => {
+        if (!item.classList.contains('hero-accordeon-item-active')) {
+          closeAllAccordeonItems();
+        }
+        accordeonElement.classList.add('accordeon-visible');
+        accordeonTitle.classList.add('accordeon-title-active');
+        item.classList.add('hero-accordeon-item-active');
+    });
+});
 
-// accordeonTitle.addEventListener('click', accordeonOpen);
+function closeAllAccordeonItems() {
+    accordeonItems.forEach(item => {
+        const accordeonTitle = item.querySelector(".js-accordeon-title");
+        const accordeonElement = item.querySelector(".js-accordeon-element");
+        accordeonElement.classList.remove('accordeon-visible');
+        accordeonTitle.classList.remove('accordeon-title-active');
+        item.classList.remove('hero-accordeon-item-active');
+    });
+};
 
-// function accordeonOpen(){
-//     accordeonContent.classList.toggle('accordeon-visible');
-//     accordeonList.classList.add('.hero-accordeon-item-active');
-// };
+

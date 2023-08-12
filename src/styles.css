@@ -464,14 +464,13 @@ svg {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 235px;
-  justify-content: space-between;
+  gap: 9px;
 }
 
 .hero-accordeon-item{
-  width: 100px;
-  border-radius: 26.5px 20px 0px 26.5px;
-  padding: 2px 0 2px 5px;
+  width: 85px;
+  border-radius: 26.5px 0px 0px 26.5px;
+  padding: 4px 0 4px 5px;
   transition: var(--main-trans);
 }
 
@@ -481,24 +480,29 @@ svg {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
   max-width: 258px;
-  min-height: 235px;
+  height: 100%;
   padding: 19px 16px 25px 16px;
   border-radius: 20px;
   background: var(--yellow);
   transition: all var(--main-trans);
 }
 
-.hero-accordeon-item-active{
-  background-color: var(--yellow);
-  transition: var(--main-trans);
-}
 
-.accordeon-visible{
-  visibility: visible;
-  opacity: 1;
-  transition: all var(--main-trans);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .hero-accordeon-item:hover,
@@ -507,26 +511,6 @@ svg {
   transition: var(--main-trans);
 }
 
-.hero-accordeon-item::after{
-  visibility: hidden;
-  opacity: 0;
-  border-radius: 26.5px 50% 0px 26.5px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  content: '';
-  width: 106px;
-  height: 22px;
-  background-color: var( --yellow);
-}
-
-.hero-accordeon-item:hover .hero-accordeon-item::after,
-.hero-accordeon-item:focus .hero-accordeon-item::after{
-  visibility: visible;
-  opacity: 1;
-  transition: all var(--main-trans);
-}
 
 .hero-accordeon-item:hover .accordeon,
 .hero-accordeon-item:focus .accordeon{
@@ -685,32 +669,28 @@ svg {
     padding: 42px 33px 40px 33px;
     border-radius: 30px;
   }
-
+  
   .hero-accordeon-list{
-    height: 350px;
+    gap: 0;
   }
-
+  
   .hero-accordeon-item{
-    width: 400px;
+    width: 280px;
     border-radius: 26.5px;
-    padding: 6px 0 6px 21px;
-    margin: 0;
+    padding: 7px 0 7px 21px;
   }
+  
 
   .accordeon-title{
     font-size: 30px;
   }
 
   .accordeon{
-    height: 350px;
     max-width: 658px;
     padding: 23px 25px 22px 24px;
     border-radius: 26.5px;
   }
 
-  .hero-accordeon-item::after{
-    width: 306px;
-  }
 
   .accordeon-text{
     font-size: 30px;
@@ -1382,7 +1362,6 @@ svg {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 272px;
-  min-height: 155px;
   background-color: var(--white);
   border-radius: 20px;
   box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.07);
@@ -1433,8 +1412,8 @@ svg {
 }
 
 .modal-content-item{
+  display: none;
   cursor: pointer;
-  display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--light-blue);
@@ -1442,6 +1421,10 @@ svg {
   width: 47px;
   height: 47px;
   transition: background-color var(--main-trans);
+}
+
+.modal-content-item-btn{
+  display: flex;
 }
 
 .modal-content-item:hover,
@@ -1581,7 +1564,6 @@ svg {
   .modal{
     padding: 131px 66px 38px 57px;
     width: 771px;
-    min-height: 548px;
     border-radius: 30px;
   }
 
@@ -1678,6 +1660,10 @@ svg {
   }
 }
 
+
+
+/* классы для открытия и закрытия модального окна */
+
 .backdrop.is-hidden .modal{
   transform: scale(0.75) translate(-65%, -65%);
   opacity: 0;
@@ -1688,6 +1674,47 @@ svg {
   overflow: hidden;
 }
 
+
+
+
+/* классы для активации аккордеона */
+
+.hero-accordeon-item-active{
+  background-color: var(--yellow);
+  transition: all var(--main-trans);
+}
+
+.accordeon-title-active{
+  color: var(--main-dark-grey);
+  transition: var(--main-trans);
+}
+
+.accordeon-visible{
+  visibility: visible;
+  opacity: 1;
+  transition: all var(--main-trans);
+}
+
+
+
+
+/* классы для активности li и svg в модалке */
+
+
+.modal-active-item{
+  background-color: var(--main-blue);
+}
+
+.modal-active-item-svg{
+  fill: var(--light-blue);
+  stroke: var(--light-blue);
+}
+
+
+/* класс для рендера li в модалке */
+.modal-active-array-item{
+  display: flex;
+}
 
 
 
