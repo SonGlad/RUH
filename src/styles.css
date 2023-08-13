@@ -748,12 +748,12 @@ svg {
 }
 
 .container-for-gradient{
+  /* display: flex;
+  align-items: center; */
+  /* overflow: auto; */
   position: relative;
-  display: flex;
-  align-items: center;
   margin-left: -24px;
   width: calc(100% + 38px);
-  overflow: auto;
 }
 
 .container-for-gradient::before,
@@ -769,16 +769,18 @@ svg {
   z-index: 1;
 }
 
-
-.card-list{
+/* .card-list{
   position: relative;
   overflow-x: auto;
   display: flex;
   align-items: center;
   gap: 10px;
   padding-left: 24px;
-}
+} */
 
+.swiper-slide1{
+  margin-left: 24px;
+}
 
 
 .card-container{
@@ -897,7 +899,9 @@ svg {
   .news-container{
     position: relative;
     margin-top: 0;
-    padding-top: 140px;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
     margin-bottom: 80px;
     overflow: visible;
   }
@@ -907,7 +911,7 @@ svg {
     top: 0px;
     z-index: 1;
     width: calc(100%);
-    margin-left: -126px;
+    margin-left: -80px;
     padding: 20px 0;
     margin-bottom: 0;
   }
@@ -917,18 +921,29 @@ svg {
   }
 
   .card-list{
+    /* padding-top: 40px;
     padding-left: 0px;
-    padding-bottom: 250px;
-    overflow: hidden;
-    overflow-y: auto;
+    padding-bottom: 250px; */
+    /* overflow: hidden; */
+    /* overflow-y: auto; */
+    /* width: 1667px; */
+    display: flex;
+    align-items: center;
+    padding: 40px 46px 250px 46px;
+    overflow-x: scroll;
     flex-wrap: wrap;
     gap:40px;
     max-height: 980px;
-    width: 1667px;
   }
 
  
    .container-for-gradient{
+    /* padding-top: 40px; */
+    /* align-items: center; */
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: auto;
     margin-left: 0;
   }
 
@@ -1058,25 +1073,28 @@ svg {
 }
 
 .support-container{
-  display: block;
-  overflow: auto;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+  /* display: block; */
+  /* overflow: auto; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* position: relative; */
   padding: 42px 0 40px 0;
   margin-left: -24px;
   width: calc(100% + 38px);
 }
 
 
-.support-content-list{
+/* .support-content-list{
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-left: 16px;
+  margin-right: 100px;
   width: calc(100% + 327px);
-}
+} */
 
+.swiper-slide2 {
+  margin-left: -6.5px; 
+}
 
 .support-data{
   position: relative;
@@ -1150,9 +1168,13 @@ svg {
     font-size: 50px;
   }
 
-  .support-content-list{
+  /* .support-content-list{
     gap: 40px;
     margin-left: 20px;    
+  } */
+
+  .swiper-slide2 {
+    margin-left: 6px; 
   }
 
 

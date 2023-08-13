@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat+Alternates:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
@@ -16,7 +17,7 @@
 
     <!-- HEADER -->
 
-    <hedear class="header">
+    <header class="header">
       <div class="container-index header-container">
         <a class="header-logo-link" href="./index.html">
           <svg class="icon-logo-mob icon-mob-logo" xmlns="http://www.w3.org/2000/svg" width="49px" height="27px" viewBox="0 0 49 27" fill="none">
@@ -118,7 +119,7 @@
           </button>
         </div>
       </div>
-    </hedear>
+    </header>
 
     <!-- MAIN SECTION -->
 
@@ -127,17 +128,17 @@
       <section class="hero-section">
         <div class="container-index hero-container">
           <div class="container-for-hero-picture">
-            <img class="hero-picture-filter-top" src="./img/index-images/Vector 5.png" alt="hero picture filter" alt="hero image" width="130px" height="275px">
-            <img class="hero-picture-filter-lower" src="./img/index-images/Vector 4.png" alt="hero picture filter" alt="hero image" width="130px" height="275px">
-            <img class="hero-picture" src="./img/index-images/254220-upscaled_x4 1.png" alt="hero image" width="136px" height="262px">
+            <img class="hero-picture-filter-top" src="./img/index-images/Vector5.png" alt="hero picture filter" width="130" height="275">
+            <img class="hero-picture-filter-lower" src="./img/index-images/Vector4.png" alt="hero picture filter1" width="130" height="275">
+            <img class="hero-picture" src="./img/index-images/254220-upscaled_x41.png" alt="hero image" width="136" height="262">
           </div>
           <div class="hero-container-for-background"></div>
           <div class="hero-left-container">
             <h1 class="hero-title">Розголос:</h1>
             <div class="left-container-menu">
-              <img class="load-picture" src="./img/index-images/book-picture.png" alt="book for loading" width="97px" height="142px">
+              <img class="load-picture" src="./img/index-images/book-picture.png" alt="book for loading" width="97" height="142">
               <button class="hero-load-btn" type="button" id="hero-open-modal-btn"><span class="pc-span">книгу</span> завантажити
-                <svg class="hero-icon-book-mob hero-icon-open-book" xmlns="http://www.w3.org/2000/svg" width="19px" height="9px" viewBox="0 0 19 9">
+                <svg class="hero-icon-book-mob hero-icon-open-book" xmlns="http://www.w3.org/2000/svg" width="19" height="9" viewBox="0 0 19 9">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M2.69167 0.0286121C2.50343 0.0706671 2.30483 0.191906 2.25738 0.29374C2.23228 0.347673 2.22326 1.46902 2.23053 3.63376L2.24149 6.89259L2.33 6.97268C2.5094 7.13498 2.62179 7.16021 3.24996 7.17915C4.81436 7.22636 5.95186 7.39007 7.06816 7.72863C7.78072 7.94475 8.28359 8.15871 8.82247 8.47503L8.98026 8.56763L8.97863 5.23091C8.97733 2.586 8.96719 1.87714 8.92966 1.81205C8.80858 1.60216 8.09293 1.09472 7.58127 0.855969C6.63506 0.41445 5.35554 0.126855 3.96795 0.0437814C3.21577 -0.00124299 2.84504 -0.00563955 2.69167 0.0286121ZM15.4515 0.019819C13.843 0.0833964 12.46 0.370139 11.4188 0.855969C10.9072 1.09472 10.1915 1.60216 10.0705 1.81205C10.0329 1.87714 10.0228 2.58517 10.0215 5.22649L10.0199 8.5588L10.3819 8.36134C10.862 8.09951 11.3016 7.92008 11.932 7.72874C13.0475 7.39016 14.1853 7.22639 15.7502 7.17915C16.3783 7.16021 16.4907 7.13498 16.6701 6.97268L16.7586 6.89259L16.7696 3.63376C16.7771 1.40176 16.7682 0.348548 16.7415 0.291162C16.6929 0.186957 16.4588 0.0524364 16.2693 0.019819C16.1158 -0.00660634 16.1199 -0.00660634 15.4515 0.019819ZM0.385076 1.50454C0.213877 1.55974 0.113965 1.62737 0.0509586 1.73077C-0.000204062 1.81472 -0.00543914 2.20608 0.00362015 5.27971L0.0137933 8.73429L0.118384 8.8193C0.353702 9.01058 0.531101 9.03553 1.12764 8.96134C2.39809 8.8033 3.23537 8.74021 4.48775 8.70812C5.44525 8.6836 6.93706 8.75864 7.69477 8.86941C8.0303 8.91848 8.03966 8.91328 7.82305 8.79791C6.73345 8.21771 5.15706 7.88511 3.24324 7.83168C2.62083 7.81433 2.31055 7.77287 2.03728 7.6706C1.79439 7.5797 1.52636 7.41233 1.39415 7.26902C1.17617 7.03275 1.18333 7.13767 1.18333 4.17969V1.46833L0.839897 1.46847C0.601459 1.46856 0.462414 1.47959 0.385076 1.50454ZM17.8168 4.1776C17.8168 7.13786 17.8239 7.03275 17.606 7.26902C17.4738 7.41233 17.2057 7.5797 16.9628 7.6706C16.6896 7.77287 16.3793 7.81433 15.7569 7.83168C13.8431 7.88511 12.2667 8.21771 11.1771 8.79791C10.9605 8.91328 10.9698 8.91848 11.3053 8.86941C12.0631 8.75864 13.5549 8.6836 14.5124 8.70812C15.7647 8.74021 16.602 8.8033 17.8725 8.96134C18.469 9.03553 18.6464 9.01058 18.8817 8.8193L18.9863 8.73429L18.996 5.27202C19.0053 1.91941 19.0034 1.80664 18.9354 1.71136C18.8968 1.65725 18.8019 1.58301 18.7246 1.54641C18.594 1.48458 18.5566 1.47929 18.2004 1.47199L17.8168 1.46414V4.1776Z"/>
                 </svg>
                 <svg class="hero-icon-book-pc hero-icon-open-book" xmlns="http://www.w3.org/2000/svg" width="60" height="47" viewBox="0 0 60 47">
@@ -261,13 +262,13 @@
           <div class="news-title-container">
             <h2 class="news-title">новини</h2>
           </div>
-          <div class="container-for-gradient">
-            <ul class="card-list">
-              <li class="card-list-item">
+          <div class="container-for-gradient swiper mySwiper" id="news-container-for-gradient">
+            <ul class="card-list swiper-wrapper" id="news-card-list">
+              <li class="card-list-item swiper-slide swiper-slide1">
                 <div class="card-container">
                   <h3 class="card-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
                   <div class="news-picture-container">
-                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189px" height="220px">
+                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189" height="220">
                   </div>
                   <div class="card-content">
                     <h3 class="card-content-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
@@ -280,11 +281,11 @@
                   </div>
                 </div>
               </li>
-              <li class="card-list-item">
+              <li class="card-list-item swiper-slide swiper-slide1">
                 <div class="card-container">
                   <h3 class="card-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
                   <div class="news-picture-container">
-                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189px" height="220px">
+                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189" height="220">
                   </div>
                   <div class="card-content">
                     <h3 class="card-content-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
@@ -297,11 +298,11 @@
                   </div>
                 </div>
               </li>
-              <li class="card-list-item">
+              <li class="card-list-item swiper-slide swiper-slide1">
                 <div class="card-container">
                   <h3 class="card-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
                   <div class="news-picture-container">
-                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189px" height="220px">
+                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189" height="220">
                   </div>
                   <div class="card-content">
                     <h3 class="card-content-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
@@ -314,11 +315,11 @@
                   </div>
                 </div>
               </li>
-              <li class="card-list-item">
+              <li class="card-list-item swiper-slide swiper-slide1">
                 <div class="card-container">
                   <h3 class="card-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
                   <div class="news-picture-container">
-                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189px" height="220px">
+                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189" height="220">
                   </div>
                   <div class="card-content">
                     <h3 class="card-content-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
@@ -331,11 +332,11 @@
                   </div>
                 </div>
               </li> 
-              <li class="card-list-item">
+              <li class="card-list-item swiper-slide swiper-slide1">
                 <div class="card-container">
                   <h3 class="card-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
                   <div class="news-picture-container">
-                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189px" height="220px">
+                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189" height="220">
                   </div>
                   <div class="card-content">
                     <h3 class="card-content-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
@@ -348,11 +349,11 @@
                   </div>
                 </div>
               </li> 
-              <li class="card-list-item">
+              <li class="card-list-item swiper-slide swiper-slide1">
                 <div class="card-container">
                   <h3 class="card-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
                   <div class="news-picture-container">
-                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189px" height="220px">
+                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189" height="220">
                   </div>
                   <div class="card-content">
                     <h3 class="card-content-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
@@ -365,11 +366,11 @@
                   </div>
                 </div>
               </li> 
-              <li class="card-list-item">
+              <li class="card-list-item swiper-slide swiper-slide1">
                 <div class="card-container">
                   <h3 class="card-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
                   <div class="news-picture-container">
-                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189px" height="220px">
+                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189" height="220">
                   </div>
                   <div class="card-content">
                     <h3 class="card-content-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
@@ -382,11 +383,11 @@
                   </div>
                 </div>
               </li> 
-              <li class="card-list-item">
+              <li class="card-list-item swiper-slide swiper-slide1">
                 <div class="card-container">
                   <h3 class="card-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
                   <div class="news-picture-container">
-                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189px" height="220px">
+                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189" height="220">
                   </div>
                   <div class="card-content">
                     <h3 class="card-content-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
@@ -399,11 +400,11 @@
                   </div>
                 </div>
               </li> 
-              <li class="card-list-item">
+              <li class="card-list-item swiper-slide swiper-slide1">
                 <div class="card-container">
                   <h3 class="card-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
                   <div class="news-picture-container">
-                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189px" height="220px">
+                    <img class="news-picture-pc" src="./img/index-images/news-pic-pc.jpg" alt="News Picture" width="189" height="220">
                   </div>
                   <div class="card-content">
                     <h3 class="card-content-title">ЩО ТАКЕ НАРОДНИЙ ГЕТЬМАНАТ?</h3>
@@ -429,14 +430,14 @@
           <div class="support-title-container">
             <h2 class="support-title">Люди, які підтримують рух</h2>
           </div>
-          <div class="support-container">
-            <ul class="support-content-list">
-              <li class="support-content-item">
+          <div class="support-container swiper mySwiper2">
+            <ul class="support-content-list swiper-wrapper">
+              <li class="support-content-item swiper-slide swiper-slide2">
                 <div class="support-data">
                   <div class="support-picture-container">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200px" height="156px">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter1" width="191" height="124">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter" width="191" height="124">
+                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200" height="156">
                   </div>
                   <div class="support-description">
                     <h3 class="support-descr-title">Олег Скрипка</h3>
@@ -444,12 +445,12 @@
                   </div>
                 </div>
               </li>
-              <li class="support-content-item">
+              <li class="support-content-item swiper-slide swiper-slide2">
                 <div class="support-data">
                   <div class="support-picture-container">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200px" height="156px">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter1" width="191" height="124">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter" width="191" height="124">
+                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200" height="156">
                   </div>
                   <div class="support-description">
                     <h3 class="support-descr-title">Олег Скрипка</h3>
@@ -457,12 +458,12 @@
                   </div>
                 </div>
               </li>
-              <li class="support-content-item">
+              <li class="support-content-item swiper-slide swiper-slide2">
                 <div class="support-data">
                   <div class="support-picture-container">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200px" height="156px">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter1" width="191" height="124">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter" width="191" height="124">
+                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200" height="156">
                   </div>
                   <div class="support-description">
                     <h3 class="support-descr-title">Олег Скрипка</h3>
@@ -470,12 +471,12 @@
                   </div>
                 </div>
               </li>
-              <li class="support-content-item">
+              <li class="support-content-item swiper-slide swiper-slide2">
                 <div class="support-data">
                   <div class="support-picture-container">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200px" height="156px">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter1" width="191" height="124">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter" width="191" height="124">
+                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200" height="156">
                   </div>
                   <div class="support-description">
                     <h3 class="support-descr-title">Олег Скрипка</h3>
@@ -483,12 +484,12 @@
                   </div>
                 </div>
               </li>
-              <li class="support-content-item">
+              <li class="support-content-item swiper-slide swiper-slide2">
                 <div class="support-data">
                   <div class="support-picture-container">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200px" height="156px">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter1" width="191" height="124">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter" width="191" height="124">
+                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200" height="156">
                   </div>
                   <div class="support-description">
                     <h3 class="support-descr-title">Олег Скрипка</h3>
@@ -496,12 +497,12 @@
                   </div>
                 </div>
               </li>
-              <li class="support-content-item">
+              <li class="support-content-item swiper-slide swiper-slide2">
                 <div class="support-data">
                   <div class="support-picture-container">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture-filter" src="./img/index-images/Rectangle 48.png" alt="picture filter" width="191" height="124">
-                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200px" height="156px">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter" width="191" height="124">
+                    <img class="support-picture-filter" src="./img/index-images/Rectangle-48.png" alt="picture filter" width="191" height="124">
+                    <img class="support-picture" src="./img/index-images/support-picture.png" alt="Support picture" width="200" height="156">
                   </div>
                   <div class="support-description">
                     <h3 class="support-descr-title">Олег Скрипка</h3>
@@ -524,7 +525,7 @@
           <ul class="social-media-list">
             <li class="footer-social-media-item footer-logo-item">
               <a class="foter-link" href="./index.html">
-                <svg class="footer-logo-mob" xmlns="http://www.w3.org/2000/svg" width="49px" height="27px" viewBox="0 0 49 27" fill="none">
+                <svg class="footer-logo-mob" xmlns="http://www.w3.org/2000/svg" width="49" height="27" viewBox="0 0 49 27" fill="none">
                   <path d="M0 13.3662L48.3861 13.3662" stroke="#FFDC75" stroke-width="20"/>
                   <path d="M23.4589 2.10449C24.8024 2.10449 25.8488 2.43364 26.5982 3.09194C27.3567 3.75025 27.7359 4.6737 27.7359 5.8623C27.7359 6.9869 27.3932 7.86921 26.7078 8.50922C26.0315 9.14924 25.0811 9.46925 23.8565 9.46925C23.4544 9.46925 23.0614 9.4281 22.6776 9.34581C22.3029 9.26353 21.8962 9.12638 21.4575 8.93438V11.8007H19.2642V6.12288C19.2642 4.8337 19.6206 3.84168 20.3334 3.1468C21.0554 2.45193 22.0972 2.10449 23.4589 2.10449ZM23.4726 7.79606C24.1215 7.79606 24.6196 7.63149 24.9669 7.30234C25.3233 6.97318 25.5015 6.50689 25.5015 5.90344C25.5015 5.29086 25.3233 4.81542 24.9669 4.47712C24.6196 4.13883 24.1352 3.96968 23.5138 3.96968C22.8649 3.96968 22.3577 4.15711 21.9921 4.53198C21.6357 4.90685 21.4575 5.43257 21.4575 6.10916V7.1789C21.7317 7.37091 22.0424 7.52177 22.3897 7.63149C22.7461 7.7412 23.1071 7.79606 23.4726 7.79606Z" fill="#1C1C1C"/>
                   <path d="M37.9025 2.20049V8.79723C37.9025 10.2418 37.5004 11.3481 36.6962 12.1162C35.892 12.8933 34.7816 13.2819 33.3651 13.2819C32.5517 13.2819 31.8069 13.1676 31.1306 12.939C30.4543 12.7196 29.8786 12.4042 29.4033 11.9927L30.267 10.347C31.1352 11.051 32.1496 11.403 33.3102 11.403C34.1145 11.403 34.7085 11.2019 35.0923 10.7996C35.4853 10.3881 35.6818 9.75725 35.6818 8.90695V8.31722C35.0421 9.10352 34.1373 9.49668 32.9675 9.49668C31.752 9.49668 30.8153 9.15381 30.1573 8.46808C29.5084 7.7732 29.184 6.77661 29.184 5.47829V2.20049H31.4048V5.34114C31.4048 6.09088 31.583 6.65775 31.9394 7.04176C32.2958 7.42577 32.7985 7.61777 33.4473 7.61777C34.1327 7.61777 34.6765 7.41662 35.0786 7.01433C35.4807 6.61203 35.6818 6.00402 35.6818 5.19028V2.20049H37.9025Z" fill="#1C1C1C"/>
@@ -701,6 +702,12 @@
       </div>
     </div>
 
+
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+      <!-- Custom JS -->
     <script type="module" src="./modalOpenIndex.js"></script>
     <script type="module" src="./modalRenderFile.js"></script>
     <script type="module" src="./indexAccordeon.js"></script>
