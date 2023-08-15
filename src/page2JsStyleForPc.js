@@ -83,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         }   
     }
-    
     applyStyle();
     window.addEventListener('resize', applyStyle);
 });
