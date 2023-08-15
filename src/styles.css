@@ -94,17 +94,17 @@ svg {
 
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -112,14 +112,14 @@ svg {
 
 
 :root {
-    --main-dark-grey: #1C1C1C;
-    --light-grey: rgba(28, 28, 28, 0.2);  
-    --main-blue: #4753DC;
-    --light-blue: #F1F2FE;
-    --yellow:#FFDC75;
-    --white: #ffffff;  
-    
-    --main-trans: 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+  --main-dark-grey: #1C1C1C;
+  --light-grey: rgba(28, 28, 28, 0.2);  
+  --main-blue: #4753DC;
+  --light-blue: #F1F2FE;
+  --yellow:#FFDC75;
+  --white: #ffffff;  
+  
+  --main-trans: 250ms cubic-bezier(0.4, 0, 0.2, 1);    
 }
 
 
@@ -425,7 +425,6 @@ svg {
   gap: 86px;
 }
 
-
 .hero-title{
   color: var(--main-dark-grey);
   font-family: Montserrat Alternates;
@@ -514,6 +513,12 @@ svg {
   margin-bottom: 40px;
 }
 
+.accordeon-support-container-for-text{
+  overflow: hidden;
+  overflow-y: scroll;
+  height: -webkit-fill-available;
+}
+
 .hero-text{
   color: var(--main-dark-grey, #1C1C1C);
   font-family: Montserrat Alternates;
@@ -554,8 +559,6 @@ svg {
 }
 
 .accordeon{
-  overflow: hidden;
-  overflow-y: scroll;
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -727,7 +730,6 @@ svg {
 
   .container-for-text{
     margin-top: 15px;
-    /* max-width: 1086px; */
     margin-bottom: 35px;
   }
 
@@ -736,7 +738,6 @@ svg {
   }
 
   .hero-accordeon{
-    /* min-height: 255px; */
     margin-left: 50px;
     padding: 25px 15px 25px 15px;
     border-radius: 20px;
@@ -881,10 +882,6 @@ svg {
   }
 
 
-  /* .hero-right-container{
-    width: 1086px;
-  } */
-
   .container-for-text{
     margin-top: 19px;
     max-width: 1086px;
@@ -956,7 +953,6 @@ svg {
   width: 100%;
   margin-left: -13px;
   width: calc(100% + 26px);
-  margin-right: 10px;
   background-color: var(--light-blue);
   padding: 3px 0;
   margin-bottom: 20px;
@@ -977,13 +973,9 @@ svg {
 
 
 .container-for-gradient{
-  display: flex;
+  /* display: flex;
   align-items: center;
-  overflow: auto;
-
-
-
-
+  overflow: auto; */
 
   position: relative;
   margin-left: -24px;
@@ -1003,26 +995,26 @@ svg {
   z-index: 1;
 }
 
-.card-list{
+/* .card-list{
   margin-left: 24px;
-
-  
-
   position: relative;
   overflow-x: auto;
   display: flex;
   align-items: center;
   gap: 10px;
   padding-left: 12px;
-}
-
-
-/* .swiper-slide1{
-  margin-left: 24px;
 } */
 
 
+.swiper-slide1{
+  margin-left: 20px;
+}
 
+@media screen and (min-width: 490px) {
+  .swiper-slide1{
+    margin-left: 20px;
+  }
+}
 
 
 .news-picture-container{
@@ -1042,7 +1034,6 @@ svg {
   transform: translate(-20%, 0%);
   scale: 1;
 }
-
 
 .card-container{
   padding: 10px 10px 17px 10px;
@@ -1162,14 +1153,14 @@ svg {
 
 
 
-@media screen and (min-width: 1200px){
+
+
+@media screen and (min-width: 768px) {
   .news-container{
     position: relative;
     margin-top: 0;
-    padding-top: 100px;
-    padding-left: 80px;
-    padding-right: 80px;
-    margin-bottom: 80px;
+    padding-top: 64px;
+    /* margin-bottom: 80px; */
     overflow: visible;
   }
 
@@ -1177,36 +1168,16 @@ svg {
     position: absolute;
     top: 0px;
     z-index: 1;
-    width: calc(100%);
-    margin-left: -80px;
-    padding: 20px 0;
+    width: 100%;
+    padding: 12px 0;
     margin-bottom: 0;
   }
 
   .news-title{
-    font-size: 50px;
+    font-size: 33px;
   }
 
-  .card-list{
-    /* padding-top: 40px;
-    padding-left: 0px;
-    padding-bottom: 250px; */
-    /* overflow: hidden; */
-    /* overflow-y: auto; */
-    /* width: 1667px; */
-    display: flex;
-    align-items: center;
-    padding: 40px 46px 250px 46px;
-    overflow-x: scroll;
-    flex-wrap: wrap;
-    gap:40px;
-    max-height: 980px;
-  }
-
- 
-   .container-for-gradient{
-    /* padding-top: 40px; */
-    /* align-items: center; */
+  .container-for-gradient{
     position: relative;
     display: flex;
     width: 100%;
@@ -1219,6 +1190,17 @@ svg {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 33.33%, #FFF 100%);
   }
 
+  .card-list{
+    display: flex;
+    align-items: center;
+    padding: 40px 14px 150px 24px;
+    overflow-x: scroll;
+    flex-wrap: wrap;
+    gap:25px;
+    justify-content: space-between;
+    max-height: 585px;
+  }
+
   ::-webkit-scrollbar {
     width: 1px;
   }
@@ -1228,34 +1210,25 @@ svg {
   }
 
   .card-container{
-    padding: 35px 27px 17px 36px;
-    border-radius: 30px;
-    min-width: 529px;
-    max-width: 529px;
+    margin-bottom: 0;
+    max-width: none;
+    padding: 22px 12px 17px 22px;
+    border-radius: 20px;
+    width: calc((100vw - 115px) / 3);
   }
 
   .news-picture-container{
-    width: 466px;
-    height: 259px;
+    width: calc((100vw - 215px) / 3);
+    height: auto;
     border-radius: 0px;
-
   }
-  
+
   .news-picture-pc{
-    min-width: 466px;
+    min-width: 0;
+    width: 100%;
+    height: auto;
+    position: static;
     transform: translate(0%, 0%);
-  }
-
-  .card-title{
-    display: block;
-    color: var(--main-dark-grey);
-    text-align: justify;
-    font-family: Montserrat Alternates;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 10px;
   }
 
   .card-content{
@@ -1264,7 +1237,7 @@ svg {
   }
 
   .card-content-title{
-    display: none;
+    font-size: 15px;
   }
 
   .card-description{
@@ -1272,10 +1245,10 @@ svg {
   }
 
   .card-text{
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 112.9%;
-    max-width: 466px;
+    line-height: normal;
+    max-width: none;
     margin-bottom: 10px;
   }
 
@@ -1289,14 +1262,14 @@ svg {
     align-items: center;
     justify-content: center;
     border-radius: 26.5px;
-    padding: 10px 22px;
-    gap: 9px;
-    font-size: 24px;
+    padding: 5px 10px;
+    gap: 5px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 112.9%;
     text-align: justify;
-    min-width: 221px;
-    height: 47px;
+    min-width: 121px;
+    height: 22px;
   }
 
   .news-link{
@@ -1311,6 +1284,83 @@ svg {
     transform: translate(-50%, 50%);
     z-index: 1;
     margin-top: 0px;
+    padding: 5px 15px;
+    min-width: 194px;
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+  .news-container{
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 80px;
+  }
+
+  .news-title-container{
+    padding: 20px 0;
+  }
+
+  .news-title{
+    font-size: 50px;
+  }
+
+  .card-list{
+    padding: 40px 72px 250px 72px;
+    gap:40px;
+    max-height: 1060px;
+  }
+
+  .card-container{
+    padding: 35px 27px 17px 36px;
+    border-radius: 30px;
+    width: calc((100vw - 226px) / 3);
+  }
+
+  .news-picture-container{
+    width: calc((100vw - 415px) / 3);
+  }
+  
+  .card-title{
+    display: block;
+    color: var(--main-dark-grey);
+    text-align: justify;
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+
+  .card-content-title{
+    display: none;
+  }
+
+  .card-text{
+    font-size: 24px;
+    line-height: 112.9%;
+    max-width: 466px;
+  }
+
+  .card-btn{
+    padding: 10px 22px;
+    gap: 9px;
+    font-size: 24px;
+    font-weight: 600;
+    min-width: 221px;
+    height: 47px;
+  }
+
+  .news-section-button{
     padding: 10px 31px;
     min-width: 194px;
     font-size: 30px;
@@ -1498,6 +1548,13 @@ svg {
 
 
 /* FOOTER */
+
+
+
+
+
+
+
 
 .footer{
   background-color: var(--light-blue);

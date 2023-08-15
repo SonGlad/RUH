@@ -6,15 +6,35 @@ document.addEventListener('DOMContentLoaded', function() {
             loop: true,
             allowSlideNext: true,
             slideClass: 'swiper-slide1',
-            // centeredSlides: true,
-            // centeredSlidesBounds: true,
-            spaceBetween: 5,
-        
+            centeredSlides: true,
+            centeredSlidesBounds: true,
+            spaceBetween: 0,
             slidesPerView: 2,
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
             },
+            breakpoints:{
+                490:{
+                    centeredSlides: true,
+                    centeredSlidesBounds: true,
+                    spaceBetween: -100,
+                    slidesPerView: 2,
+                },
+                590:{
+                    centeredSlides: true,
+                    centeredSlidesBounds: true,
+                    spaceBetween: 0,
+                    slidesPerView: 3,
+                },
+                690:{
+                    centeredSlides: true,
+                    centeredSlidesBounds: true,
+                    spaceBetween: -100,
+                    slidesPerView: 3,
+                },
+
+            }
         });
     } else{
         const mainContainer = document.querySelector("#news-container-for-gradient");
