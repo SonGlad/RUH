@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth >= 390 && window.innerWidth <= 767) {
             if (lastIndex % 2 === 0) {
                 const lastItem = listItems[lastIndex];
-                lastItem.style.transform = "translate(176px, 0)";
+                lastItem.style.transform = "translate(0, 0)";
+                lastItem.style.marginLeft = "auto";
             }
         } 
     }

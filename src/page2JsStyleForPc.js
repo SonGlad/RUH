@@ -47,3 +47,43 @@ document.addEventListener('DOMContentLoaded', function() {
     applyStyles();
     window.addEventListener('resize', applyStyles);
 });
+
+
+
+// ДИНАМИЧЕСКИЙ РАСЧЕТ ШИРИНЫ   
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const listItem5 = document.querySelector(".content-list li:nth-child(5)");
+    const listItem7 = document.querySelector(".content-list li:nth-child(7)");
+    const listItem16 = document.querySelector(".content-list li:nth-child(16)");
+    const listItem18 = document.querySelector(".content-list li:nth-child(18)");
+
+    
+    function applyStyle() {
+        if (window.innerWidth >= 1200) {
+            function interpolateValue(x, xMin, xMax, yMin, yMax) {
+            return ((x - xMin) * (yMax - yMin)) / (xMax - xMin) + yMin;
+            }
+                
+            function updateListItemWidth() {
+                const screenWidth = window.innerWidth;
+                const availableWidth = screenWidth + interpolateValue(screenWidth, 1200, 1920, 155, 395);
+                const newWidth = availableWidth / 2;
+                listItem5.style.width = newWidth + "px";
+                listItem7.style.width = newWidth + "px";
+                listItem16.style.width = newWidth + "px";
+                listItem18.style.width = newWidth + "px";
+            
+            }
+            updateListItemWidth();
+            window.addEventListener("resize", updateListItemWidth);
+
+        }   
+    }
+    
+    applyStyle();
+    window.addEventListener('resize', applyStyle);
+});
