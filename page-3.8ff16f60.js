@@ -1,2 +1,0 @@
-const e=document.querySelector("#header-open-modal-btn"),d=document.querySelector("#modal"),c=document.querySelector("#modal-close-btn");e.addEventListener("click",(()=>{d.classList.remove("is-hidden"),document.body.classList.add("scroll-lock")})),c.addEventListener("click",(()=>{d.classList.add("is-hidden"),document.body.classList.remove("scroll-lock")}));
-//# sourceMappingURL=page-3.8ff16f60.js.map

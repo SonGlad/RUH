@@ -1,0 +1,2 @@
+const e=document.querySelector("#header-open-modal-btn"),d=document.querySelector("#modal"),c=document.querySelector("#modal-close-btn");function s(){document.body.classList.remove("scroll-lock")}e.addEventListener("click",(()=>{d.classList.remove("is-hidden"),document.body.classList.add("scroll-lock")})),c.addEventListener("click",(()=>{d.classList.add("is-hidden"),s()})),d.addEventListener("click",(()=>{d.classList.add("is-hidden"),s()}));
+//# sourceMappingURL=page-3.42c11541.js.map
