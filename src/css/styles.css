@@ -405,7 +405,7 @@ svg {
   top: -73px;
   left: 66px;
   z-index: -2;
-  min-width: 136px;
+  /* min-width: 136px; */
   width: calc((100vw - 136px) / 1.87);
   height:auto;
   display: flex;
@@ -589,7 +589,7 @@ svg {
   background: var(--yellow);
   transition: all var(--main-trans);
   width: calc(100vw / 1.5);
-  min-width: 258px;
+  /* min-width: 258px; */
 }
 
 /* ::-webkit-scrollbar {
