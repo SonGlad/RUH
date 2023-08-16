@@ -316,9 +316,7 @@ svg {
 @media screen and (min-width: 1200px){
   .header-container{
       margin-top: 0;
-      padding-top: 38px;
-      padding-bottom: 44px;
-      padding-right: 72px;
+      padding: 38px 72px 44px 72px;
       justify-content: space-between;
   }
 
@@ -327,7 +325,7 @@ svg {
       width: 182px;
       height: 101px;
       margin-right: 10px;
-      margin-left: 72px;
+      margin-left: 6px;
   }
 
   .button-container{
@@ -366,6 +364,14 @@ svg {
   .icon-logo-pc{
       width: 182px;
       height: 101px;
+  }
+}
+
+
+
+@media screen and (min-width: 1560px){
+  .header-container{
+      padding: 38px 126px 44px 126px;
   }
 }
 
@@ -807,28 +813,6 @@ svg {
       left: 300px;
     }
   }
-  @media screen and (min-width: 1600px) {
-    .container-for-hero-picture{
-      left: 330px;
-    }
-  }
-  @media screen and (min-width: 1700px) {
-    .container-for-hero-picture{
-      left: 360px;
-    }
-  }
-  @media screen and (min-width: 1800px) {
-    .container-for-hero-picture{
-      left: 380px;
-      max-width: 455px;
-      max-height: 861px;
-    }
-  }
-  @media screen and (min-width: 1900px) {
-    .container-for-hero-picture{
-      left: 440px;
-    }
-  }
   
   .hero-picture-filter-lower{
     width: 100%;
@@ -906,10 +890,9 @@ svg {
   .hero-accordeon-item{
     border-radius: 26.5px;
     padding: 7px 0 7px 21px;
-    width: calc(100vw / 4);
+    width: calc(100vw / 3.8);
   }
   
-
   .accordeon-title{
     font-size: 30px;
   }
@@ -921,12 +904,59 @@ svg {
     max-width: 658px;
   }
 
-
   .accordeon-text{
     font-size: 30px;
     line-height: calc(34 / 30);
   } 
 }
+
+
+
+@media screen and (min-width: 1560px){
+  .hero-container{
+    padding-right: 126px;
+    padding-left: 126px;
+  }
+  .hero-accordeon-item{
+    width: calc(100vw / 4.7);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container-for-hero-picture{
+    left: 330px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .container-for-hero-picture{
+    left: 360px;
+  }
+}
+
+@media screen and (min-width: 1800px){
+  .left-container-menu{ 
+    margin-left: 18px;
+  }
+  .container-for-hero-picture{
+    left: 380px;
+    max-width: 455px;
+    max-height: 861px;
+  }
+}
+
+
+@media screen and (min-width: 1900px){
+  .hero-accordeon-item{
+    width: 280px;
+  }
+  .container-for-hero-picture{
+    left: 440px;
+  }
+}
+
+
+
+
 
 
 
@@ -950,7 +980,6 @@ svg {
 
 
 .news-title-container{
-  width: 100%;
   margin-left: -13px;
   width: calc(100% + 26px);
   background-color: var(--light-blue);
@@ -973,6 +1002,7 @@ svg {
 
 
 .container-for-gradient{
+   /* ПРОВЕРИТЬ НА SWIPER (для его применения отключить)*/
   /* display: flex;
   align-items: center;
   overflow: auto; */
@@ -995,6 +1025,8 @@ svg {
   z-index: 1;
 }
 
+
+ /* ПРОВЕРИТЬ НА SWIPER (для его применения отключить)*/
 /* .card-list{
   margin-left: 24px;
   position: relative;
@@ -1156,6 +1188,7 @@ svg {
 
 
 @media screen and (min-width: 768px) {
+  
   .news-container{
     position: relative;
     margin-top: 0;
@@ -1168,7 +1201,9 @@ svg {
     position: absolute;
     top: 0px;
     z-index: 1;
-    width: 100%;
+    margin-left: -24px;
+    width: calc(100% + 10px);
+    padding-left: 24px;
     padding: 12px 0;
     margin-bottom: 0;
   }
@@ -1306,7 +1341,10 @@ svg {
   }
 
   .news-title-container{
+    margin-left: -72px;
+    width: calc(100% + 72px);
     padding: 20px 0;
+    padding-left: 100px;
   }
 
   .news-title{
@@ -1367,6 +1405,19 @@ svg {
   }
 }
 
+@media screen and (min-width: 1560px) {
+  .card-list{
+    padding: 40px 126px 250px 126px;
+  }
+  .card-container{
+    width: calc((100vw - 335px) / 3);
+  }
+
+  .news-picture-container{
+    width: calc((100vw - 525px) / 3);
+  }
+}
+
 
 
 
@@ -1379,9 +1430,8 @@ svg {
 
 
 .support-title-container{
-  width: calc(100% + 38px);
-  margin-left: -24px;
-  margin-right: 10px;
+  width: calc(100% + 26px);
+  margin-left: -13px;
   background-color: var(--light-blue);
   padding: 3px 0;
 }
@@ -1398,17 +1448,26 @@ svg {
 }
 
 .support-container{
-  /* display: block; */
-  /* overflow: auto; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  /* position: relative; */
+   /* ПРОВЕРИТЬ НА SWIPER (для его применения отключить)*/
+  /* display: block;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; */
+
+
+
+
+
   padding: 42px 0 40px 0;
   margin-left: -24px;
   width: calc(100% + 38px);
 }
 
 
+
+
+ /* ПРОВЕРИТЬ НА SWIPER (для его применения отключить)*/
 /* .support-content-list{
   display: flex;
   align-items: center;
@@ -1417,18 +1476,62 @@ svg {
   width: calc(100% + 327px);
 } */
 
+
+
+
+
+/* НАСТРОЙКА SWIPER ОТ 390PX ДО 740PX */
+
 .swiper-slide2 {
-  margin-left: -6.5px; 
+  margin-left: -3px; 
 }
+
+@media screen and (min-width: 440px) {
+  .swiper-slide2 {
+    margin-left: 3px; 
+  }
+}
+@media screen and (min-width: 490px) {
+  .swiper-slide2 {
+    margin-left: 9px; 
+  }
+}
+@media screen and (min-width: 540px) {
+  .swiper-slide2 {
+    margin-left: 15px; 
+  }
+}
+@media screen and (min-width: 590px) {
+  .swiper-slide2 {
+    margin-left: 25px; 
+  }
+}
+@media screen and (min-width: 640px) {
+  .swiper-slide2 {
+    margin-left: 0px; 
+  }
+}
+@media screen and (min-width: 690px) {
+  .swiper-slide2 {
+    margin-left: 8px; 
+  }
+}
+@media screen and (min-width: 740px) {
+  .swiper-slide2 {
+    margin-left: 16px; 
+  }
+}
+/* /////////////////////////////////////// */
+
+
 
 .support-data{
   position: relative;
-  width: 209px;
   border-radius: 12px;
   box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.07);
   padding: 10px 25px 18px 25px;
+  width: 209px;
 }
-
 
 .support-picture-container{
   margin-bottom: 8px;
@@ -1448,6 +1551,7 @@ svg {
   position: absolute;
   width: 200px;
   height: 156px;
+  min-width: 191px;
   left: 4px;
   top:-22px;
   z-index: 1;
@@ -1475,39 +1579,190 @@ svg {
 }
 
 
-@media screen and (min-width: 1200px) {
 
-  .support-container{
-    padding: 119px 0 80px 0;
-    margin-left: -20px;
-    width: calc(100% + 40px);
-  }
+
+@media screen and (min-width: 768px) {
 
   .support-title-container{
-    width: calc(100% + 252px);
-    margin-left: -126px;
+    padding: 11px 0;
+  }
+
+  .support-title{
+    font-size: 33px;
+  }
+
+  .support-container{
+    padding: 80px 0 60px 0;
+  }
+
+
+
+
+ /* ПРОВЕРИТЬ НА SWIPER (для его применения отключить)*/
+  /* .support-content-list{
+    gap: 28px;
+    margin-right: 0;
+    width: 100%;
+  } */
+
+
+
+/* НАСТРОЙКА SWIPER ОТ 768PX ДО 1200PX */
+
+  .swiper-slide2 {
+    margin-left: 4px; 
+  }
+
+  @media screen and (min-width: 800px) {
+    .swiper-slide2 {
+      margin-left: 8px; 
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .swiper-slide2 {
+      margin-left: 22px; 
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .swiper-slide2 {
+      margin-left: 38px; 
+    }
+  }
+  @media screen and (min-width: 1100px) {
+    .swiper-slide2 {
+      margin-left: -3px; 
+    }
+  }
+
+
+/* //////////////////////////////////////// */
+
+
+  .support-data{
+    border-radius: 30px;
+    padding: 0px 20px 20px 28px;
+    width: 370px;
+  }
+
+  .support-picture-container{
+    margin-bottom: 19px;
+    min-height: 225px;
+  }
+
+  .support-picture-filter{
+    width: 328px;
+    height: 225px;
+    left: 21px;
+    top: 3px;
+  }
+
+  .support-picture{
+    width: 359px;
+    height: 281px;
+    top: -57px;
+    left: 6px;
+  }
+
+  .support-descr-title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 112.9%
+  }
+
+  .support-descr-text{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 112.9%;
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+  .main-support-container{
+    padding: 0 72px;
+  }
+
+  
+  .support-title-container{
     padding: 20px 0;
+    margin-left: -72px;
+    width: calc(100% + 144px);
   }
   
   .support-title{
     font-size: 50px;
   }
+  
+  .support-container{
+    padding: 119px 0 80px 0;
+  }
+
+
+
+
+  /* ПРОВЕРИТЬ НА SWIPER (для его применения отключить)*/
 
   /* .support-content-list{
     gap: 40px;
-    margin-left: 20px;    
   } */
 
+
+
+
+
+
+  /* НАСТРОЙКА SWIPER ОТ 1200PX ДО 1900PX */
   .swiper-slide2 {
     margin-left: 6px; 
   }
 
+  @media screen and (min-width: 1300px) {
+    .swiper-slide2 {
+      margin-left: 20px; 
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .swiper-slide2 {
+      margin-left: 28px; 
+    }
+  }
+  @media screen and (min-width: 1500px) {
+    .swiper-slide2 {
+      margin-left: 6px; 
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    .swiper-slide2 {
+      margin-left: 8px; 
+    }
+  }
+  @media screen and (min-width: 1700px) {
+    .swiper-slide2 {
+      margin-left: 22px; 
+    }
+  }
+  @media screen and (min-width: 1800px) {
+    .swiper-slide2 {
+      margin-left: -8px; 
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    .swiper-slide2 {
+      margin-left: 0px; 
+    }
+  }
+
+
+
+
+
 
   .support-data{
-    position: relative;
-    width: 529px;
     border-radius: 30px;
     padding: 0px 27px 27px 36px;
+    width: 529px;
   }
 
   .support-picture-container{
@@ -1538,6 +1793,25 @@ svg {
     font-size: 24px;
     font-weight: 300;
     line-height: 112.9%;
+  }
+}
+
+
+@media screen and (min-width: 1560px) {
+
+  .main-support-container{
+    padding: 0 126px;
+  }
+  .support-title-container{
+    margin-left: -126px;
+    width: calc(100% + 252px);
+  }
+}
+
+
+@media screen and (min-width: 1920px) {
+  .swiper-slide2 {
+    margin-left: 6px; 
   }
 }
 
@@ -1705,7 +1979,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .footer-container{
-    padding: 60px 126px 70px 126px;
+    padding: 60px 72px 70px 72px;
   }
 
   .social-media-content{
@@ -1737,6 +2011,12 @@ svg {
     max-width: 423px;
     font-size: 20px;
     line-height: normal;
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .footer-container{
+    padding: 60px 126px 70px 126px;
   }
 }
 
